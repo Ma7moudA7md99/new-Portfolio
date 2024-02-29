@@ -1,0 +1,133 @@
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --image-radius: 10px;
+}
+::selection {
+  color: white;
+  background-color: #01203d;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* small screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/home-back.jpg);
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+/* end global rules  */
+/* start customizing header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+header .container .img img {
+  height: 50px;
+}
+header .container .links ul {
+  display: flex;
+  font-size: 1.5em;
+  color: white;
+}
+header .container .links ul li {
+  padding: 0 10px;
+}
+/* end customizing header */
+.home {
+  padding: 100px 0;
+}
+.home .container {
+  width: 80%;
+  height: 100%;
+  margin: 90px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.home .container .img {
+  position: relative;
+  width: 360px;
+  height: 360px;
+}
+.home .container .img img {
+  width: 50%;
+  position: absolute;
+}
+.home .container .img .topleft {
+  top: 0;
+  left: 0;
+  border-top-left-radius: var(--image-radius);
+}
+.home .container .img .topright {
+  top: 0;
+  right: 0;
+  border-top-right-radius: var(--image-radius);
+}
+.home .container .img .bottomright {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: var(--image-radius);
+}
+.home .container .img .bottomleft {
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: var(--image-radius);
+}
+.home .container #scroll-icon {
+  position: absolute;
+  bottom: 0;
+}
